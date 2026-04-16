@@ -8,6 +8,7 @@ import 'failure.dart';
 
 class FailureExceptions {
   static Failure getException(Object error) {
+    print(error);
     return switch (error) {
       DioException e => _handleDio(e),
       AuthException e => _handleAuth(e),
