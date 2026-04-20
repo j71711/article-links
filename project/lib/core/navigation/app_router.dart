@@ -19,16 +19,9 @@ import 'package:project/features/sign_in/presentation/cubit/sign_in_cubit.dart';
 
 class AppRouter {
   static final GoRouter router = GoRouter(
-    initialLocation: Routes.signUp,
+    initialLocation: Routes.signIn,
     routes: [
-      GoRoute(
-        path: Routes.splash,
-        builder: (context, state) {
-          return Scaffold(body: Center(child: Text("splash screen")));
-        }, // SplashScreen
-      ),
-    
-
+   
   GoRoute(
     path: Routes.home,
     builder: (context, state) => BlocProvider(

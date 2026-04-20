@@ -15,7 +15,7 @@ T _$identity<T>(T value) => value;
 /// @nodoc
 mixin _$AddLinkModel {
 
- int get id; String get firstName; String get lastName;
+ int get id;
 /// Create a copy of AddLinkModel
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
@@ -28,16 +28,16 @@ $AddLinkModelCopyWith<AddLinkModel> get copyWith => _$AddLinkModelCopyWithImpl<A
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is AddLinkModel&&(identical(other.id, id) || other.id == id)&&(identical(other.firstName, firstName) || other.firstName == firstName)&&(identical(other.lastName, lastName) || other.lastName == lastName));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is AddLinkModel&&(identical(other.id, id) || other.id == id));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,id,firstName,lastName);
+int get hashCode => Object.hash(runtimeType,id);
 
 @override
 String toString() {
-  return 'AddLinkModel(id: $id, firstName: $firstName, lastName: $lastName)';
+  return 'AddLinkModel(id: $id)';
 }
 
 
@@ -48,7 +48,7 @@ abstract mixin class $AddLinkModelCopyWith<$Res>  {
   factory $AddLinkModelCopyWith(AddLinkModel value, $Res Function(AddLinkModel) _then) = _$AddLinkModelCopyWithImpl;
 @useResult
 $Res call({
- int id, String firstName, String lastName
+ int id
 });
 
 
@@ -65,12 +65,10 @@ class _$AddLinkModelCopyWithImpl<$Res>
 
 /// Create a copy of AddLinkModel
 /// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? firstName = null,Object? lastName = null,}) {
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,}) {
   return _then(_self.copyWith(
 id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
-as int,firstName: null == firstName ? _self.firstName : firstName // ignore: cast_nullable_to_non_nullable
-as String,lastName: null == lastName ? _self.lastName : lastName // ignore: cast_nullable_to_non_nullable
-as String,
+as int,
   ));
 }
 
@@ -155,10 +153,10 @@ return $default(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int id,  String firstName,  String lastName)?  $default,{required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int id)?  $default,{required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case _AddLinkModel() when $default != null:
-return $default(_that.id,_that.firstName,_that.lastName);case _:
+return $default(_that.id);case _:
   return orElse();
 
 }
@@ -176,10 +174,10 @@ return $default(_that.id,_that.firstName,_that.lastName);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int id,  String firstName,  String lastName)  $default,) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int id)  $default,) {final _that = this;
 switch (_that) {
 case _AddLinkModel():
-return $default(_that.id,_that.firstName,_that.lastName);case _:
+return $default(_that.id);case _:
   throw StateError('Unexpected subclass');
 
 }
@@ -196,10 +194,10 @@ return $default(_that.id,_that.firstName,_that.lastName);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int id,  String firstName,  String lastName)?  $default,) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int id)?  $default,) {final _that = this;
 switch (_that) {
 case _AddLinkModel() when $default != null:
-return $default(_that.id,_that.firstName,_that.lastName);case _:
+return $default(_that.id);case _:
   return null;
 
 }
@@ -211,12 +209,10 @@ return $default(_that.id,_that.firstName,_that.lastName);case _:
 @JsonSerializable()
 
 class _AddLinkModel implements AddLinkModel {
-  const _AddLinkModel({required this.id, required this.firstName, required this.lastName});
+  const _AddLinkModel({required this.id});
   factory _AddLinkModel.fromJson(Map<String, dynamic> json) => _$AddLinkModelFromJson(json);
 
 @override final  int id;
-@override final  String firstName;
-@override final  String lastName;
 
 /// Create a copy of AddLinkModel
 /// with the given fields replaced by the non-null parameter values.
@@ -231,16 +227,16 @@ Map<String, dynamic> toJson() {
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _AddLinkModel&&(identical(other.id, id) || other.id == id)&&(identical(other.firstName, firstName) || other.firstName == firstName)&&(identical(other.lastName, lastName) || other.lastName == lastName));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _AddLinkModel&&(identical(other.id, id) || other.id == id));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,id,firstName,lastName);
+int get hashCode => Object.hash(runtimeType,id);
 
 @override
 String toString() {
-  return 'AddLinkModel(id: $id, firstName: $firstName, lastName: $lastName)';
+  return 'AddLinkModel(id: $id)';
 }
 
 
@@ -251,7 +247,7 @@ abstract mixin class _$AddLinkModelCopyWith<$Res> implements $AddLinkModelCopyWi
   factory _$AddLinkModelCopyWith(_AddLinkModel value, $Res Function(_AddLinkModel) _then) = __$AddLinkModelCopyWithImpl;
 @override @useResult
 $Res call({
- int id, String firstName, String lastName
+ int id
 });
 
 
@@ -268,12 +264,10 @@ class __$AddLinkModelCopyWithImpl<$Res>
 
 /// Create a copy of AddLinkModel
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? firstName = null,Object? lastName = null,}) {
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,}) {
   return _then(_AddLinkModel(
 id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
-as int,firstName: null == firstName ? _self.firstName : firstName // ignore: cast_nullable_to_non_nullable
-as String,lastName: null == lastName ? _self.lastName : lastName // ignore: cast_nullable_to_non_nullable
-as String,
+as int,
   ));
 }
 

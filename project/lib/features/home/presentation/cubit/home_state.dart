@@ -9,10 +9,11 @@ abstract class HomeState extends Equatable {
 }
 
 class HomeInitialState extends HomeState {}
+class HomeLoadedState extends HomeState {}
 class HomeSuccessState extends HomeState {
     final List<LinkEntity> links;
 
-  HomeSuccessState({required this.links});
+  const HomeSuccessState({required this.links});
 }
 
 class HomeErrorState extends HomeState {

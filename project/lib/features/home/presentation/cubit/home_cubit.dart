@@ -11,6 +11,7 @@ class HomeCubit extends Cubit<HomeState> {
 
   Future<void> getHomeMethod() async {
     final result = await _homeUseCase.getHome();
+    emit(HomeLoadedState());
     result.when(
       (success) {
         emit(HomeSuccessState(links: success.links));
@@ -23,7 +24,6 @@ class HomeCubit extends Cubit<HomeState> {
 
   @override
   Future<void> close() {
-    //here is when close cubit
     return super.close();
   }
 }

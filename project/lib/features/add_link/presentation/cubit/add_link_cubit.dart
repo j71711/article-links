@@ -17,7 +17,7 @@ class AddLinkCubit extends Cubit<AddLinkState> {
         emit(AddLinkSuccessState());
       },
       (whenError) {
-             emit(AddLinkErrorState(message: whenError.message)); 
+          emit(AddLinkErrorState(message: whenError.message ));
       },
     );
   }

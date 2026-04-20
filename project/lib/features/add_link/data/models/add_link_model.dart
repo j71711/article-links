@@ -7,8 +7,7 @@ part 'add_link_model.g.dart';
 abstract class AddLinkModel with _$AddLinkModel {
   const factory AddLinkModel({
     required int id,
-    required String firstName,
-    required String lastName,
+ 
     
   }) = _AddLinkModel;
 
@@ -19,6 +18,6 @@ abstract class AddLinkModel with _$AddLinkModel {
 
 extension AddLinkModelMapper on AddLinkModel {
   AddLinkEntity toEntity() {
-    return AddLinkEntity(id: id, firstName: firstName, lastName: lastName);
+    return AddLinkEntity(id: id,);
   }
   }

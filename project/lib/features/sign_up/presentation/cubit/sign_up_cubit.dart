@@ -22,6 +22,7 @@ class SignUpCubit extends Cubit<SignUpState> {
     );
     result.when(
       (success) {
+        
          emit(SignUpSuccessState());
       },
       (whenError) {
@@ -32,7 +33,7 @@ class SignUpCubit extends Cubit<SignUpState> {
 
   @override
   Future<void> close() {
-    //here is when close cubit
+
     return super.close();
   }
 }
