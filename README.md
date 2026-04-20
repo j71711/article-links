@@ -36,16 +36,16 @@ Modern Inputs: Clean underlined text fields with integrated brand icons.
 
 ## 🧱 Project Structure
 
-lib
+ lib
  ┣ core
- ┃ ┣ errors     
- ┃ ┣ navigation  
- ┃ ┗ widgets     
+ ┃ ┣ errors        
+ ┃ ┣ navigation    
+ ┃ ┗ widgets       
  ┣ features
- ┃ ┣ add_link    
- ┃ ┣ home        
- ┃ ┗ sign_in     
- ┣ main.dart
+ ┃ ┣ add_link      
+ ┃ ┣ home          
+ ┃ ┗ sign_in       
+ ┗ main.dart       
 
  
 ## 🛠️ Technologies Used
