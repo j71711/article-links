@@ -1,29 +1,77 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/H5xMdj5O)
-# ArticleLab📝
-### 1. Authentication (Supabase Auth)
-* *Sign Up / Sign In:* User registration and login using email and password.
+## 📝 ArticleLab
+ArticleLab is a high-performance Flutter application designed to curate, manage, and share digital resources.
+The app features a sophisticated modern UI with organic gradients, providing a seamless flow for users to save and access global article feeds.
 
-### 2. Article Management
-* *Add Article:* A form to save:
-    * *Article Title:* The name of the article.
-    * *Link (URL):* The source address.
+## ✨ Features
+🔐 Secure Authentication
+Powered by Supabase Auth
+
+Sign Up / Sign In: Robust user registration using email and password.
+
+Session Persistence: Keeps users logged in for a better UX.
+
+## 📚 Article Management
+Dynamic Form Entry: Save resources with specific metadata.
+
+Article Title: Descriptive naming for easy identification.
+
+Source URL: Direct links to the original content.
+
+🌍 Global Feed
+Live Home Screen: Fetches and displays a real-time list of all community-submitted articles.
+
+Modern Card Layout: Articles are presented in clean, blue-themed interactive cards.
+
+🔗 Navigation & Viewing
+Integrated Browser: Open any article source instantly in the system browser.
+
+Chevron Navigation: Guided UI elements to indicate clickable resources.
+
+🎨 UI Design
+Organic Design Language: Fluid headers with multi-tonal gradients and translucent "blob" decorations.
+
+Rounded Sheet Layout: Content is housed in high-radius white containers for a premium feel.
+
+Modern Inputs: Clean underlined text fields with integrated brand icons.
+
+## 🧱 Project Structure
+Plaintext
+lib
+ ┣ core
+ ┃ ┣ errors     
+ ┃ ┣ navigation  
+ ┃ ┗ widgets     
+ ┣ features
+ ┃ ┣ add_link    
+ ┃ ┣ home        
+ ┃ ┗ sign_in     
+ ┣ main.dart
+
+ 
+## 🛠️ Technologies Used
+Framework: Flutter (Dart)
+
+Backend: Supabase (BaaS)
+
+Database: PostgreSQL
+
+State Management: Flutter BLoC (Cubit)
+
+Navigation: GoRouter
+
+Dependency Injection: Injectable & GetIt
+
+## ⚙️ Architecture
+UI ➔ Cubit ➔ UseCase ➔ Repository ➔ Remote DataSource ➔ Supabase
+
+## demo
 
 
-### 3. Global Feed
-* *Home Screen:* Fetches and displays all submitted articles in a clean list format.
+https://github.com/user-attachments/assets/c88a4bf0-9d07-435d-b8ad-db2f3453419b
 
 
-### 4. Details & Navigation
-* *View Details:* Tap on any article to see its full title and link.
-* *Open Link:*  open the article in the system browser.
 
----
 
-## 🛠 Technical Stack
+👩🏻‍💻 Developed By
+Jalnar Alharthi
 
-* *Frontend:* Flutter (Dart)
-* *Backend & Auth:* Supabase (BaaS)
-* *Database:* PostgreSQL (Managed by Supabase)
-
-## Happy Coding ! 🥳
----
