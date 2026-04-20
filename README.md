@@ -35,7 +35,7 @@ Rounded Sheet Layout: Content is housed in high-radius white containers for a pr
 Modern Inputs: Clean underlined text fields with integrated brand icons.
 
 ## 🧱 Project Structure
-Plaintext
+
 lib
  ┣ core
  ┃ ┣ errors     
